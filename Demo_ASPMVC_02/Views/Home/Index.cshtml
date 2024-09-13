@@ -1,7 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Accueil";
+    bool isConnected = ViewContext.HttpContext.Session.TryGetValue("MemberId", out byte[]? nb);
 }
 
 <div class="text-center">
     <h1 class="display-4">Accueil</h1>
+    <h2>
+        Bonjour @(isConnected ? ViewContext.HttpContext.Session.GetString("Pseudo") : "...")
+    </h2>
 </div>
