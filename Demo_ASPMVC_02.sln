@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_ASPMVC_02", "Demo_ASPMVC_02\Demo_ASPMVC_02.csproj", "{49146DEC-0758-4879-901A-E2359D1EA197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo_ASPMVC_02", "Demo_ASPMVC_02\Demo_ASPMVC_02.csproj", "{49146DEC-0758-4879-901A-E2359D1EA197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_ASPMVC_02.DAL", "Demo_ASPMVC_02.DAL\Demo_ASPMVC_02.DAL.csproj", "{1E5D689A-BD28-41F5-AEF8-C356A3E755DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{49146DEC-0758-4879-901A-E2359D1EA197}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49146DEC-0758-4879-901A-E2359D1EA197}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49146DEC-0758-4879-901A-E2359D1EA197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E5D689A-BD28-41F5-AEF8-C356A3E755DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E5D689A-BD28-41F5-AEF8-C356A3E755DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E5D689A-BD28-41F5-AEF8-C356A3E755DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E5D689A-BD28-41F5-AEF8-C356A3E755DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

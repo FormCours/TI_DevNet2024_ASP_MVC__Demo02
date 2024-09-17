@@ -1,0 +1,47 @@
+﻿@model Demo_ASPMVC_02.Models.PokemonViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>PokemonViewModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-3">
+            @Html.DisplayNameFor(model => model.Numero)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Numero)
+        </dd>
+        <dt class = "col-sm-3">
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+        <dt class = "col-sm-3">
+            @Html.DisplayNameFor(model => model.Vie)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Vie)
+        </dd>
+        @if (Model.PreEvolutionNumero is not null)
+        {
+                
+                <dt class = "col-sm-3">Pré-évolution:
+            </dt>
+            <dd class = "col-sm-10">
+                    <a asp-controller="Pokemon" asp-action="Details" asp-route-id="@Model.PreEvolutionNumero">@Model.PreEvolution?.Nom</a>
+            </dd>
+                
+        }
+        
+    </dl>
+</div>
+<div>
+    <a asp-controller="Pokemon" asp-action="Edit" asp-route-id="@Model.Numero">Edit</a>
+    <a asp-action="Index">Back to List</a>
+</div>
